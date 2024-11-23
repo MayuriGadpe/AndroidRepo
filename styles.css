@@ -1,0 +1,289 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('https://cdn.pixabay.com/photo/2017/07/15/19/42/train-track-2507499_1280.jpg') no-repeat center center/cover;
+    height: 75vh; /* Full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    z-index: 1;
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-text {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+ /* About Section with Float */
+.about-section {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 40px 0;
+  }
+  
+  .about-description {
+    width: 50%; /* Take half the width */
+    float: left;
+    padding-right: 20px;
+  }
+  
+  .about-description h2 {
+    font-size: 2.5rem;
+  }
+  
+  .about-description .lead {
+    font-size: 1.1rem;
+    color: #6c757d; /* Muted text color */
+  }
+  
+  .about-stats {
+    width: 45%; /* Slightly smaller width than the description */
+    float: right;
+  }
+  
+  .about-stats .stat {
+    margin-bottom: 20px;
+  }
+  
+  .about-stats h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .about-stats p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  /* Clear floats for the next section */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  /* Our Services Section */
+.services-section {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 60px 0;
+  }
+  
+  .services-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .services-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  
+  .service-card {
+    background-color: #fff; /* White background for the card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto; /* Center the image */
+  }
+  
+  .service-card h4 {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .service-card p {
+    font-size: 0.95rem;
+    color: #6c757d;
+  }
+  
+/* Why Choose Us Section Styling */
+.choose-us-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+    background-blend-mode: overlay; /* Blend the image with the overlay color */
+    padding: 60px 0;
+    color: white; /* Text color for readability */
+  }
+  
+  .choose-us-section h2 {
+    font-size: 2.5rem;
+    color: white; /* White text for the title */
+  }
+  
+  .choose-us-section p {
+    font-size: 1.1rem;
+    color: #f8f9fa; /* Slightly muted white for description text */
+  }
+  
+  .feature-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent card background */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .feature-card .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card h4 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .feature-card p {
+    font-size: 0.95rem;
+    color: #dcdcdc;
+  }
+  
+
+  /* Testimonials Section */
+.testimonials-section {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 60px 0;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .testimonials-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  
+  .testimonial-card {
+    background-color: #fff; /* White card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .testimonial-card .client-image img {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #007bff; /* Blue border around the client image */
+  }
+  
+  .testimonial-card .testimonial-quote {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .testimonial-card .client-name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .testimonial-card .client-role {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+
+  /* Contact Section Styling */
+.contact-section {
+    background-color: #f0f8ff; /* Light blue background for the section */
+    padding: 60px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  
+  .contact-details {
+    float: left; /* Float contact details to the left */
+    width: 48%; /* Adjust width to fit layout */
+    margin-right: 4%; /* Add spacing between columns */
+  }
+  
+  .contact-form {
+    float: right; /* Float the form to the right */
+    width: 48%; /* Adjust width to fit layout */
+  }
+  
+  .contact-form .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-form .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form .btn {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #0056b3;
+  }
+
+  
+  
